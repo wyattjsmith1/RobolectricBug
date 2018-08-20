@@ -8,9 +8,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
+import org.robolectric.annotation.Config;
 
 import static junit.framework.TestCase.assertTrue;
 
+@Config(constants = BuildConfig.class, sdk= 26)
 @RunWith(RobolectricTestRunner.class)
 public class CustomViewHolderTest {
 
@@ -26,6 +28,7 @@ public class CustomViewHolderTest {
 
     @Test
     public void test() {
+        // Test should pass.
         assertTrue(true);
     }
 
