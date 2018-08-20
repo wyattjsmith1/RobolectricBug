@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="StarsView">
+        <attr name="starStyle" format="enum">
+            <enum name="Small" value="0"/>
+            <enum name="Regular" value="1"/>
+            <enum name="Large" value="2"/>
+            <enum name="ExtraLarge" value="3"/>
+            <enum name="Other" value="4"/>
+        </attr>
+        <attr name="starsLocation" format="enum">
+            <enum name="Top" value="0"/>
+            <enum name="Bottom" value="1"/>
+            <enum name="Left" value="2"/>
+            <enum name="Right" value="3"/>
+        </attr>
+        <attr name="starsEditable" format="boolean"/>
+        <attr name="starsEnabledOnSwipe" format="boolean"/>
+    </declare-styleable>
+    <attr name="starsViewStyle" format="reference"/>
+
+    <!-- Default theme for StarsView -->
+    <style name="StarsView">
+        <item name="android:textAppearance">@style/CaptionText</item>
+        <item name="android:drawablePadding">90dp</item>
+    </style>
+
+    <style name="CaptionText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+</resources>
